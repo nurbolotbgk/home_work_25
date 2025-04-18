@@ -23,6 +23,13 @@ public class AppRunner {
         moneyAcceptor = new CoinAcceptor(100);
     }
 
+    public static void run() {
+        AppRunner app = new AppRunner();
+        while (!isExit) {
+            app.startSimulation();
+        }
+    }
+
     private void startSimulation() {
         print("В автомате доступны:");
         showProducts(products);
