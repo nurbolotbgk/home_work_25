@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AppRunner {
     private final UniversalArray<Product> products = new UniversalArrayImpl<>();
-    private final MoneyAcceptor moneyAcceptor; // заменили CoinAcceptor
+    private final MoneyAcceptor moneyAcceptor;
     private static boolean isExit = false;
 
     private AppRunner() {
